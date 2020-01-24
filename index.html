@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="https://assets.materialup.com/uploads/82eae29e-33b7-4ff7-be10-df432402b2b6/preview" sizes="16x16"/>
+  <title>
+    Google Search Result Clone
+  </title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700&display=swap" rel="stylesheet">
+  </head>
+
+    <body>
+
+    <!-- top -->
+    <header>
+      <div class="top-container"> 
+
+       <div class="logo-area">
+       <a>
+         <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="logo" class="logo">
+       </a>
+       </div>
+
+       <!--Input area and search by voice, the main dragon-->
+       <form class="input-field" action="#" method="post"> 
+         <input type="text" value="how to become a software engineer" class="text-field">
+ 
+        <a href="#">
+         <img src="https://www.vippng.com/png/detail/8-82692_file-google-mic-svg-google-microphone-icon.png" alt="mic" height="24px">
+       </a> 
+       <div>
+
+            <div class="search">
+                <span>
+                  <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/color-bold-style/21/01-512.png" alt="submit" height="18px"></a>
+                </span>
+            </div>  
+    
+      </div>
+    </form>
+      <div class="accounts">
+        <a href="#">
+          <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-f6227d477e683ae5bd1270aac11b93e5-grid.png" alt="grid" class="grid">
+        </a>
+      </div>
+      
+      <a href="#"><div class="profile">  </div></a>
+
+      </div>
+     </header>
+    
+   <nav>   
+    <div class="nav">
+
+      <div class="navbar">
+            <a href="#" class="navlist active">
+              <span>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGZpbGw9IiMzNEE4NTMiIGQ9Ik0xMCAydjJhNiA2IDAgMCAxIDYgNmgyYTggOCAwIDAgMC04LTh6Ii8+PHBhdGggZmlsbD0iI0VBNDMzNSIgZD0iTTEwIDRWMmE4IDggMCAwIDAtOCA4aDJjMC0zLjMgMi43LTYgNi02eiIvPjxwYXRoIGZpbGw9IiNGQkJDMDQiIGQ9Ik00IDEwSDJhOCA4IDAgMCAwIDggOHYtMmMtMy4zIDAtNi0yLjY5LTYtNnoiLz48cGF0aCBmaWxsPSIjNDI4NUY0IiBkPSJNMjIgMjAuNTlsLTUuNjktNS42OUE3Ljk2IDcuOTYgMCAwIDAgMTggMTBoLTJhNiA2IDAgMCAxLTYgNnYyYzEuODUgMCAzLjUyLS42NCA0Ljg4LTEuNjhsNS42OSA1LjY5TDIyIDIwLjU5eiIvPjwvc3ZnPgo="
+                alt="All" height="16px" width="16px">
+              </span>
+              <span>
+                All
+              </span>
+              
+            </a>
+
+            <a href="#" class="navlist">
+              <span>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjNDI4NUY0IiBkPSJNMTAgMTYuNWw2LTQuNS02LTQuNXoiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0VBNDMzNSIgZD0iTTIwIDEyaDJ2Ny41YTIuNSAyLjUgMCAwIDEtMi41IDIuNUgxMnYtMmg3YTEgMSAwIDAgMCAxLTF2LTd6Ii8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNGQkJDMDQiIGQ9Ik0yMCAxMlY1YTEgMSAwIDAgMC0xLTFoLTdWMmg3LjZBMi40IDIuNCAwIDAgMSAyMiA0LjRWMTJoLTJ6Ii8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiMzNEE4NTMiIGQ9Ik0xMiAyMHYySDVhMyAzIDAgMCAxLTMtM1Y0LjRBMi40IDIuNCAwIDAgMSA0LjQgMkgxMnYySDVhMSAxIDAgMCAwLTEgMXYxNGExIDEgMCAwIDAgMSAxaDd6Ii8+PC9zdmc+Cg=="
+                alt="play" height="16px" width="16px">
+              </span>
+              <span>
+                Videos
+              </span>
+           
+            </a>
+           
+            <a href="#" class="navlist">
+              <span>
+                <img src="https://www.flaticon.com/premium-icon/icons/svg/2198/2198323.svg"
+                alt="images" height="16px" width="16px">
+              </span>
+              <span>
+                Images
+              </span>
+           </a>
+
+            <a href="#" class="navlist">
+              <span>
+                <img src="https://image.flaticon.com/icons/svg/876/876209.svg" alt="maps" height="16px" width="16px">
+              </span>
+              <span>
+                News
+              </span>
+            </a>
+
+            <a href="#" class="navlist">
+              <span>
+                <img src="https://image.flaticon.com/icons/svg/854/854878.svg" alt="gallery" height="16px" width="16px">
+              </span>
+              <span class="map">
+                Maps
+              </span>
+            </a>
+
+            <a href="#" class="navlist">
+             <span>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMaDxkRpRkg3Cg8Ts8Gve-owjKflB-B7hQx2uKdr_ElxZ_Twsm"
+              alt="more" height="16px">
+             </span>
+              <span>
+                More
+              </span>
+         
+            </a>
+
+            <div class="navaside">
+              <a href="#" class="navlist">
+                Setings
+               </a>
+   
+              <a href="#" class="navlist">
+               Tools
+              </a>
+  
+            </div>
+    </div>
+    
+  
+  </div></div>
+   </nav>  
+       
+   
+         <hr>
+      <!--Main Section, -->
+     <section class="main" style="clear: both; position: relative; zoom:1">
+       <p>About 837,000,000 results (0.76 seconds) </p>
+
+      <!--Ad Result-->
+       <div class="result" >
+                <div class="ad">
+                  
+                  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIYA1gMBEQACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAAAQIDBAUGB//EAEwQAAIBAwIDBAUGCAoKAwAAAAECAwAEEQUSBiExE0FRYRQicYGRBzKhsdHSFTZSVmJ0kpQWIzdUVXN1k8HwFyQ0NUJjorPh4iYzQ//EABoBAAEFAQAAAAAAAAAAAAAAAAABAgMEBQb/xAA0EQACAgIABAQFAgYCAwEAAAAAAQIDBBEFEiExExRBURUiMlJhM3EjNJGhsdFCwVOB8CT/2gAMAwEAAhEDEQA/AOsrgjrAoAKACgAoAKACgTZDPdQQKTJIox1HU/AVJCqc+yF/BKrB1DKcgjIpjTT0wFJCjJIA86NAUJdWtYyVUmQ/ojlViONOXcVRbIfw3HnHYtj2in+TfuLyMtW2pW0/qhtj+Dcqisx5wWxGmi3UAhX1C9g060e6unCRp1PeT3AeJqWmmd01GJHbZGuPNI4PU+Nr64dhp6rbQ9AxXc59/QewD310VHCqoLdnVmRbn2SeodEZP8INY3Z/CNz1z87p7qt+Sx/sK/mbvuLtpxjq9uw7SSO5XvWVeZ94xUFvDMea6dCWGddHv1O00DiK01pSigxXKjc8LeHiD3j6aw8zBnjPfdGnj5UbenqbNUC2FABQAUAFABQAUAFABQAUAFAC0ANLBQSeQFPhCU5KMe4ydkYJyk9IrzXkaR7lYe/lWrRwi52at6L3Mi/jNMa91dX7D4JhKpOB+1UGdgyxppR6r3J8HPWTBufytHI69bSnVWkuLKWaFkIWOKTbh88m686uYk4+FqMtMsZEJyacU2tehs8MJPDZqlyXaTABLHOMVRzpRlP5SxBSjBKXcNYmmlMoQH0eFgsjDpuPTNS41Goc+iSLimk+7IzoeqKjsbKQKnziWXl9NXnTZrqhnnKfuIPwfedrNEbeQSQY7Ve9M9M/Gm+FPetD/MVJJ83RhDYXs08sENu7ywnEiLj1DnHP30irlLokLK+uMVKT6Psa+kXJmhaOUntI+Rz4VlZNXJIbL3RyHyiXkjajbWWcRJEJcZ6liw+pfprZ4PWlVKz1fQx+ISfOo+hDecNW8c116NKxhVVWMsf/AK5d6qQ3ubIp9edNqPMur/uvx/2Mnirb12/wyFNJ0+e5uLeH0mNrO4jjlaRxiUM+w4GPVOae8q2MVN61JNr8dN/+xqork3Fej/qOsdI03ULsiKOeGOG7NvKjy7g4w5DBsDB9XmOdFuTdVFczTbW107dv9iwprnLotaejPkuItM1O1udOVE7Ihm7K8E4bnzG4AY5ZqwoyuqlGz+60Q7jXYnD/ADs9XVtyg5znvrkJLT0dDF7QtNFCgAoAKACgAoAKACgAoAKAFoAhuSoiO7oeXvq/w6uyzIjyehm8UsrhjS8TszhZILfVuIbuDVZisUIAhiL7QR410WffdWt1LZkcMoqlH5uhPwwSl/qFlDMZrOFh2Lk5x5D/AD3VLXc1R4li66Kubjxd8Y1vW2de0YlRXIBZO8iuPlZ8zceiZ18E4wUWxVXpimNjta7FGW6Wyh1KF4oZZJ3jaOOePerDnn6628S2Kp1+xHbS7Zwe9Jb6kt9qVncXOoOrns7i7glQ7D81QQxqxK2Db/LRFDGsjGC11Skv9F6XiOylklfDK04PbsE+cVYdn/09fOpXk19fyV1g3JL8duv9Sot5pyajdXHpomtbqUvLbvZE713E7QT0PnUasgpt76Pv0JpU2yrjHl012eyto0e3tZQpVGb1QT0FY+ZJb0i9LskzJ490eS7hi1G2QtJCu2RVGSUzkHHkc/GrXCspQbqk+/YzM+lyXPH0OLfVb5/S91ySLwqZ/VHrkdD05H2Vu+XqXL0+nsZjtn169+5JLrWpTdn2t0T2bhwdi5LDoTy9bHnmmxxaVvS7iyvsetsV9c1J5opjdYeFy6bYkADEEE4AwTgnrSLDpUXFLv8Alg77G97J9OS74g1SCOYq6x+tIyxqgVM9+0Dr0qK+UMWqTj/v/JLVz5Fi5j06F+ZXurlJd9m7Fa6E9MHBQBWubsQZ5jkMknoBWxg8Ld8fEm9RMXP4sseXh19ZFDTdeg1FGa3dXCNtYYwR5+w1fs4JVKP8NvZRXGsimS8aK1+DXRg6hh0IrnLapVTcJdzo6bY2wU49mLUZKFABQAUAFABQAyVBIhXPsqai+dM+eD6kGRRC+HJNbRhanotnfuDc2wdgMbgdpx4cq6XF4jXOv+NLqjnMrAvos1jpuJZstMt7OIRWyKidSAO+qtnGU1KMY/sWIcFk5xnOe/c0o+RrBbOgS10HhRmmila/skuosdHX5pFS1Wutjk9GJJp9whO2MMP0TWhHIrf4HqaBdPun/wDy2+ZYc6HfX7i80R9rYu14Ip1KqPWYeIpLL0ocyEb6dDfjQKoVRgDkBWY3si6kg5U0NHC6twq9zxBOYWEFo6iQttzhjnIUe0E++uho4koY65urMm3DcrnrsMk4JBGYb858Hj+w0R4x90QfD/aQ624IXcDdXzFe9Y0xn3nP1UlnF3/wiLDh69WdNp1ha6dB2NpEETv7yx8Saybr53S5psv11RqWolsDHMVCSFlDkZ76Yxwp86QU57WTZlxBqT7EkkyAzbQ2OeD4jpyrusVxdENexwd6sWRZ+5laWLGBopJXjW5NxIkYikBLKzEjIHdj4VPHSGXOySa9NHW2JJjIbkQa5XjXL5np7HS8D5li9fcs1kG0FABQBX1GW4hsppLOETTquUjJxuNTURhKxRm9IjtlKMG4mOs3G5UEcKuQf0h96t1cHqa3zMyviM/ZDZrvjK3jMlxw0Iol+dI78l8z61JLg9UVtyY6GdZOSjGK6i/hi6KjcIgR1wvI/GqLxa/TZsxr6de5fsrv0s7ZF2yYyPBh4iq9+O6uvoR7i/pey4FqqA/IXqQPaafCqyz6ItjJ3V1/XJIO3i/LX41N5LI1vkZB5/G7c6HB1I9Ug+yq8q5w+paLELYTW4vZHImGyBypEx4KppdgOC4OcDPjSbAeKaGwoFK926KBnm3cP891aGFhWZL+XpH3M7Oz68Rde/sU2lYHuFbsOD0RXzPZz1nHMhv5NIBK4wTginT4RjyWl0EhxvKT+bTJ4nDjlyPhWFm4NmM9vqvc6DB4hXlLS6Me7pFG0kjBEUEszHAAHfVKMXJ8q7svyaits5HUOM54/XsLLFuTtWeYHDny+FblXB1y7tfUy7OJdXGBNpfGcjlDqlp2VvI20XMYOwHwP/imX8H5Y81bHVcRTlyzOjv7K3ulSSWKOQdRuUMPbUGFxGeN/Dmtobm8NWS/ErfLL/JVh0u2RldbeBWHQrGM1et4zBJ8kepQq4Lc3/En0NGJdhGOlYFlkrJc8u50VVca4qMV0RYHSoSUKACgANKhGbN3xRNb28Xo9qrZUAyO3IN4YFdph3wyK04vqcjnuzGm1ymLrGu32q6VcWzwwhPVZnTIxg+ZNOzElS3sdwrKlPKjte5y8fZEB25beq/lVn1umSU5enp7m9kecrk66uql2ft77/6J7B3e8Encg7u4eFUc23nXUtVUQxquSJqTXB5JESPE9/uqzw3hcZR8W1fsjnuKcVlGTqp9PUw1120YRdszpJKWCpsZs4LDrj9E1vRUY9IrRhTqsk229jpNb0+KLtmmPZDGXWNiOa7vD8kg++n8wxUTb0jSRyuGRvPlUdlMLVqa2JVbOqXNB6NC2m7ZOeNy8iK5LiOF5az5fpZ2fDM9ZVepfUu5KTjn4VnJb6Gk3yrZQnv8OVV1X210eLw2iEd3Pr7exzuTn5lsv/zxfL767iQ3+XCs6tnwpcnhmPOP8B9f3G4/EMyl7yYvl9y7JMIwGYer5Vi4+JK+Tgnpr0NjKzFjwU2tx9znL95bzV47VpZIo2haU9m2DIcgAZ8B5V2NFKprVaOQtvdkpXS6tv8AsVpllsr6Np3ujaeokUgl5I2cYcd+T31K+gyDU49O/r0/wMtVuF7e3uTeC/MZc7JRiUZ6x55L4c6ELLT1Ja0X+HppZLZTO7GWOV0cSc2XB6E95xiquZBTxpJk+M/DzIOProZx3K8eglV+bLMqufLrj4gVzvCYqV/X2Opz5NU9DktdOLDSY0lLxej5HcCc9cePOupfY5uj65fuJZnfwxfrJKVVZk25yRnrgDuz40i+kWfS6OjueDZmuOG7UPzKAxjPgDgfR9VclxKCjkvR0+HLmqRrbMHHhVLZZ0PVaTYo8dKaKFABQAUAWdPtp7q4CQLuXI35Hq486vYMLpWp1FPMdXhtWEGt2E1v2bKmLIqDHgcgSBnPn5mr/E1dz80vpKfDVTGvlitMwZ7JO03KMA9cVnwvlrRq88kWLWMRrtAwKZKTb6jW20UNZJWwuGEUkrKOSRuUYnPLBHPzrtKmvCjrtpHBTT8zJPp1ZkaemnyNbN6NI08Zzthd3C7WIDPuwc+tzBGevXrT1odPn6rfT8kEzaQLOHda3C2hExU5YMR6obHPmDyHsAxSdBy8TmfXr0NeLVFe7itI7WbJLJIWwOyKhTgjPgQc05NEDq1FybNiBWzuQ4x9NZnEcmqtKu1b3/Y0eF4l1knZVLWv7l4ndE3iQeVcvBwhcn6bOrsU5UNPvowpl/jWBtdxz1z1rrLUpSb8Lf5MDEco0xTyeXXp7BCAJB/qpTzzS0ajPfh8v5GZ0nKlpZPP+Dag9aPY3PlXK3WavdlfudBRVvHjCfXp1MzUdOhncLcx7lU5jYEgr7COldTg5teTWuZ/Mjk83Etw7G4r5WVV0yySRJBD6yY27nYgEDAOCetX+VFDxp67iLpViiOqQYDYGd7ZAHQA5yKGkurBXWN6RfsLOO2jVIUVIxzA8Se+sPiefBRdVfr3N7hfD7JWePd2XYk1bTk1XTJrOQ4LjKtjO1h0PxrCx73Rapo6G6pWwcWec6tHfwQQ2V9aBfRjtSYISWXny3dCOddbXk13R3FnOyxpVTb69STTLe/1Gz/BtraqkMkgaWcoQOXTJ8vCm35ddUNti14krbeZHd2xh0Wygt48sETaB+V5n2nnXMy5sqbkzo6KeWKSIjrFwXJEaDyqRYcdFjkS7mjp+oJdnYRskxnBP1VVuoda2uw2UdF2q4gUAFADJ5o4IXlmdY40GWdjyAp8ISnLlj3GzkorbEn450+zj9E0u7tVRRgzF8lj3kV22NRCmtROOysi+yxuKIrHjq1jgSzvbq1ntSAjethtvSpbIVzi0yKm3Jg1tCRyWt2kjWk8c8O8qskZyDiuKvrdVjizsqZqytNCLHg1E2P0V9Qs4riBklQPG/z1bvre4dxKMY+Db6HO8T4ZOU/Hp7meuk2KGMrbKDGxZTuOckgnJzk8wOvhW/GUZLcXs5+crY75ugy50izuLZbZotsaKypg81DEEge3FLLQkLZ8211LEGk2waNorcL2bl1bc2Qx6nrz7uvhVDJ4hTQu+5exoYuBk5L69I+5rIm1QAOlctkXTum5yOux8eFFahDsSoMVXZOVri3G8leWfCtTF4pdTHk1tGRl8HpyJc66MakIHiadlcUuvjypaQmLwemiSm/maJ0BBFZT2a6HzRiRckURlKL2gklJaaIOyX8kVbWbkpdJlOXD8aT24IcIlHMACo55N0/qlskrxKa/oikSKlV2yySBRjFJsNEE8Q3ZwCD15U+M2NlFMaq46dB9FLzMO3YybtBJdzFvW2YAjHeMVtYFUJV8z6sqZmTOnlrj0T7yfoVV9SFz03HaPId9TL5a5S13HTfi5Ndae+Vb/wBE0QEUkM4BR9w9Q99NyaYeDzdn7DMfJsldKn619y9PwdIDkAiudL4UgBQBFdW0N3A9vcIHikGGU94p9dkq5c0X1GTgpx0zFPC2j5ObJf2j9tXviWR9xX8nT9oo4W0b+ZL+0ftpPiWT9weTp+007CxtrCDsbOIRx7ixA7ye+qt11l0uab2T11xrWoosle+okyQCuQQaNiaKzR7WwRUsbJJdHojlXFvqh8UDSOEjQux/4VHOnp22PSbY3lrr+bSRjzPrWocUycO6Obe3nhtfSJGuVPT1eQ8OTr3Vr4fDISr5rl1M/IzpRnqvsaA4R467tT0z4H7lXPheN9pXefd7i/wS47/pPTPgfuUfC8b7Q89d7iNwjx2Rg6npnwP3KPheN9oeet9xg4Q46z/vLTPgfuUfC8b7Q89b7jxwhx33anpnwP3KPheL9onnrfcX+CXHf9J6Z8P/AEo+FY32i+fu9yi66/o3ENhpWtvZ3Av1bs2gBBUjzOBj3e+quVwutVuVXcmoz5uep9joZrWaAAyxFQTgHIIrDspsrW5I067oWdIsjHKoiYWkAaw3LilQhHtwefdS7DRl6vZt2guIsk8g2Prq9i3cq1setNcsuxlMzHk2eR6edXudtdWKqoRbaXcvafaySSCaUHaDkE9Saq5F/pvbGahBcsUbkJ5FfCs1oRElNFCgAoARlzSgIBQIOAoAWkFJks5GRWLwpuGQHmCnHjg1ZWLNpNtLf5K7yI7a03r8CtYOestt+8L9tO8pJf8AJf1QnmF7P+jJLa1aBmzJaurLtZTcAcvaDU1Ncqm3tdfyQX2Rmuz2vwYPCqoPlm1QRncn4NYA5zn/AGeuhwuVU6i9rqZWRzc/zHodtq8NxBfypFIFspXjfOMsVGTip1apJv2GypcXGL9Sg3FIUWxGk3xW52iFgEw5K7sD1vCo/Mduj6kyxN7+ZdO46biWSGSGOXRdRR522RghPWOM4+d4Ch5GmlyvqEcTm21NdBknFCxvN2ml3qrbhTcNhf4rIBGRnPQ0nmOutfuCxNpPmXXt+TfhmSVA8bBgwBGPAirCeyq009MzJNchjg1GfsnMdk5QtkfxjDuX3nHtqN2Lq9diVUtuK9zgvlIZX4z4WeZGVTG5Zc8wMrkVHkteC3LsLQn4mom8WjnhMUM9pHFv3YAbJ8M1gX6muSMoqJqV7hLmkm2ReiIel5b/ABb7Kq+VX/kRY8w/sYvoifzu3+LfZR5Zf+SIeYl9jAWQdlSO5gZ2OFUE8z4dKWOJzPSmmxssnS3KL0VWUhiGGD3iqjTT0yymmtoQrlSvjRvQpV7IA9BUnM2N0PC03YpIopBSSkFCkAKACgA5UAYOuafqusavYaXo12tvM8UspZ5GRSFx1IBPf4VucJphNS5lszOIWSg1p6I/9HXG2f8AfNn++S/crZ8pT9qMzzM/uKurcKcXaHbLqN/q8EkEMkalY7mRmwWAAwUAxz8aS3GqcW3Fdha7pKSSZ1KOJF3L8K4xrTOjQ/FA4yeDP5Xb/wDstvrt66zhn8rE5/O/WZ0ltpL3MWvTtcXsO26nKxxPtWQYz0xz8KfGptSbJneoutJJ9EWFST8H8J4jb1JY93qn1f4s9fCnafLX/wDegzmXPd+z/wAo0deV31TQyqsQt2xYgZwOzapLU+aBDQ0oWb9v+zOOlSalrutRyXNxBas0QdEUASjYO8j3cqZ4blZLb6EvjKumvSTfUtyXNhpbarPbQTLNAkYfdna5xhAueXgKfuMN6ItTs5E30K0doQ2kaO5DOP8AXL3zIOfpc/RTVF/LB/uyRzXz2L9l/j/BzHyoD/5pw1/Vy/WKbm/oS/Yjxelq/clhbYw8K5KSOgRn2mmy8S8V3+my6pc2VtZ28ciejkDczePxroeGY1ToU3HbZjZ181byp9DUbgCwVircXaiCOoMy1o+Vp+xFLzMvuJYvk7tyhmi4p1Qqh+esq8vfQsapPaigd85L6jC1Kwl4V4p0uwi1S6vra+ilaX0gg7SvePOqPEcarwXNLTRcwr5+Ik30N72Vy5ujWQHnSpiCKtADwKTYoUgBQAUAFABQBDpkYm4306NicNZ3GcHzSug4L/zMjii3o7g6PalQpXOCCTgZPTv91b2zH5Ec/wDKLbLDwncuGZmaaAZPcO1Wo7H8jH1rUkYVu+yTB6NXFTW1s6mPQuVGPMngz+V6/wD7Lb67eus4Z/LROez/ANZnrGB3VoFQMCgAwKADAoACoPXpQAbRnOOdGgPLvlR58bcND/lyfWKqZv6Eixi/qodiuSZ0IzgiAXPHOvRyEgG0tzyOOhBrqeGfy0f/AGYHEI81rPQ49MjjUqJDz7Mcx+S5YfXWhso+GtCR6XHFEiI+AAu4kZLY5/4DlRsVQS6HnfyixCLjHhuMHIW2mGT3+dUs/wDQkXMLpai1Zybo9p6r9NcjNddnQxZPTBwUAFABQAUAFABQAUAM0X8fNM/U7n60roOC9pmTxP0PRxW6ZJyvym/ihP8A18H/AHVplv0MdD6kcxjnXFnTFqJ9y47xUbHo5+9025h1+bVLDU7iyuZYhGWhVc7cLyyR37Qa63hSUsWJynFMmVWS00SCbiL86tS/Zj+ytHkM/wA8/YXtuIfzq1L9mP7KXkDzz9hO14iz+NWp/sx/dpOQPPP2F7biL86tS/Zj+yjkE8+/YeRxMIhKeJtUEZ6NtTH1UxODfKn1JXk2KPO49CPtuIfzq1L4J9lP5CLzz9iA6feXmqWl7qWr3V7LbE9n2yryB6jkBVPPSjjS2XcDKlZkxikbuPb764864X5Pvx/139Th/wAK6nhv8tEwM79ZnptaBUCgDy75S/x64e/V5/qqjxD+XkWsP9VDITsYHu7/AGVy7W0byei+DkZqAkCgAoAKACgAoAKAFoAx7vXbXhvijTtRvY5pIVt5o9sKgtliuOpHhXQcF7TMniXdGz/pf4f/AJpqX90n3q3TK0Y/Ffyi6RxBo7abZ296k0s8O1pUULykU9zHwqOz6GOgvmRbxzrizpiSM4bypr6ii3EQdcjqKlpyLKX8ktEN2NVd9cdlTYO8Vb+IZP3FX4bi/YgKoOoFPrysy16g2yK3DwKluyKRyevT602pONMiuktkUKNicnPefp+it/EV6rXivbMfIeHz/JrQzRZteXVLcX0N3Jbu4RwUHLPLPup96sdb5XpjafKua7HqFyim3kjxy2kY91Yzk18y7mxyRkuRroYUaI6KwUDIqg+IZSeuYsLhuJ9hIsar0UVFbk3W9Jy2WKsWmnrCOmPxVcsDfk//AJQNd/U4f8K6rhn8tEwM79ZnptaBTCgDy/5Sfx64d5j/AGef6qo8Q/lpFrD/AFkMArltm/oswN6u09ajkOTJaaKFABQAUAFABQAUAZeuaJaaukRug+Yc7SrY69at4uXZj75fUr348bdcxj/wO0k90/8AeGrnxW/8f0K/kaiSLhHSo5UkCzFkYMMyHqKbLil7TXT+gqwak9nQYzWaXRwFApIh5U1gQTR7WyOhp0X0EZGUDcmFWqMq3Hbdb1sq5GHVkpKxdhOxTPQ/GrPxbJ9yp8HxPYmtIF9JjwOjA9adDiWRY+VvoI+FYtfzJdTbb5p9lTvsBzdk+cx9/UVj2Lrs04MuAVFskFAoAyNR0uU3hv7HUbywmkURytaybN4HTNaWJxCdEORJMpX4kbZc29EIs9X/ADp1r94NWvjE/tRB8Oj9w4WOr/nTrX7waT4zP7UL8Oj9w620qRb5L2+1C91CeJCsTXUm7sweuKrZPEZ3x5WtImow41S2ns0wKz9lscuQd1IxyLHWmChQAUAFABQAUAFAC0AV3Ta3lT0xoAUAOApBR2KQBwGKBQcBhg0AMitpJN2xeQ76mhVOzsiGdkYdyxZWyvvMq/NOMVYx6E2+b0Ib7mkuUmFuI7lHQYQ9R4GpvAUbU49iLxnKDTLRHI1a9GQI5ONuzl3Dl41lSWzRRqAhgD4gGq/YmQopABlDDHjQBVKbWIPdUuxmhwFI2KOApBRwFIA4CkFHocUgDqQUKACgAoAKACgAoARxlTSoRjAKUBwFIA4UChSAWrRFZGLDPOtDFrjKDbRSyJyUtIniQRgqOgNW6YKEeUgsk5PbHbQGZhyJxT1HrsjbbWhaUQD0pfQVHJH5x9tZT7mgXrFyyFT/AMPSoZrqSwfQubDt3cqRwaWxFNN6ExTCQjkTIz30qYjIwKcIOApNgOFIKKBQAopAHUgoUAf/2Q=="
+                  class="adpic">  
+                  
+                  <div class="adcap">
+                    <p>
+                      If you want to become a developer, you should be aiming to get a junior web developer job ASAP so that you get the experience and support from senior developers. To get this kind of job you need to: learn HTML, CSS and JavaScript. build a portfolio of small projects.
+                      <span style="font-size: .8em"> June 13, 2018</span> 
+                    </p>
+                  
+                    
+                        <div class="r">
+                          <a class="r-links" href="https://www.freecodecamp.org/news/become-a-developer-and-get-your-first-job-fast-7b8ac26d84c6/"
+                          ping="/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://www.freecodecamp.org/news/become-a-developer-and-get-your-first-job-fast-7b8ac26d84c6/&amp;ved=2ahUKEwi6i9f41pnnAhUV5uAKHfEsBxgQFjACegQIDhAH">
+                          <img class="xA33Gc" alt="https://www.freecodecamp.org/" height="16" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAclBMVEUKCiMAAAAGBiEFBSH///8AAAkAABwAABoAAA8AAA0AAB91dX0AABdnZ2+hoabq6ux6eoEAABT39/i7u78fHzFeXmjDw8eXl5yrq6+zs7eIiI8aGi4TEymBgYjY2NorKzrNzdDk5OZVVV9DQ08lJTZQUFpVoPcXAAAAoklEQVQYlY1PxxbCMAyTMzqSZrSUTjop//+LOAceHPFBkpeeDfwROmOQSWU6Id1cDtkWnN87Asp+YNTjVHLPew0TKI0dajZM4YHouVU7pRbmol/gbQVBTbPGzaByHj0X9KDsGNgxFaIvQM1Ku2qIVya0B7GX1eeQxLGBuqgr6/L66fLS7sSG4czqWYiryl5BC8CITYJZQFww6XYhP1991U+8AcgyB88IBQbHAAAAAElFTkSuQmCC" width="16">
+                          <cite class="rr">www.freecodecamp.org › news › become-a-developer-and-get-your-firs...</cite>
+                            <h3 class="rc" >How to become a developer and get your first job as quickly ...</h3>
+                          </a>
+                        </div>
+                          <br>
+                         
+                        </div>
+                      
+                          <div class="s">
+                            <div>
+
+                           
+                         <div style="clear:both"> 
+  
+                  <a href="https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;
+         url=https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/&amp;ved=2ahUKEwiA1ZOPxZnnAhXWCmMBHR18CoQQFjALegQIAhAB">
+
+         <div class="r-links rr r">
+           <img alt="https://www.techrepublic.com/"
+           height="16"
+           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVQ4jZ3TPUhWYRQH8N+9foWoaRkkmQX5jtEmRbQFGUZEW2RFEFRIBDpYYBY1ZkuDNDQYRVRbJEVFBC1aCYGDYNZiaB8WBir2KtzbcK/19vYO1h8eeM7X/5zznOcEmzZs9B+4htt4UVzAuB3N6f0hBvLsB3EcVyGfoAX9OXIXXqI7lS+hCb0YgSCvhRjvcRKrU8eavCR3cGBJCFGyxIaPaMTT1HEVDmMIj7EtNxiCTHXJ1riqbiAOwjHsTitYNsKxCxMN5RPjnUEcZdJs/4LNoQ9Dd4cvT9aUfxq/Lo6607ZIHrgdF3GkQHAHboXiqM/kyJnh9uf3g5mpaZxKHd7hCs6hTzKNZqzEefTgWDGOirJlKhpulM/Md8xVRmcFYQNqJTN/i9NoxaOcCnrxOi03bvV9qmz0xL3aYO5rBjtQIfltQzgkmcCT9OxB21KfEInm27L1W/aXLvwYzSYl5mMQu/KV4e9rfNNCdm/RYtQvjlcUICiIHAKRhdk3n5v2rQ/i2VfLJfhzF+ann31p6XmwrrNxIlv57Zd6sahEXFUnDsL8eIH23N2xUxAOqlo7q6iUOE601fUyXWtE1fV/EfwEqS2DuvotFF4AAAAASUVORK5CYII="
+           width="16">
+           <cite class="cite">
+             www.techrepublic.com › article › how-to-become-a-developer-a-chea...
+             <span  >
+               <img src="https://serfob.s3.amazonaws.com/media/dropdown-icon-pngc43-4cf9-8bae-b4f7793ed75b.png" alt="dropdown" height="18">
+             </span>
+          </cite>
+          </div>
+          <h3 class="linkabout">How to become a developer: A cheat sheet - TechRepublic</h3>
+        </a>
+
+        <p>
+          Apr 30, 2019 - If you are interested in pursuing a career in development and don't know where to start, here's your go-to guide for salaries, skills, and the best programming languages to learn. ... That said, software development is a dynamic field, in which new programming languages, frameworks ...
+        </p>
+       </div>
+       
+       <!--other results-->
+       <div style="clear:both"> 
+  
+        <a href="https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;
+url=https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/&amp;ved=2ahUKEwiA1ZOPxZnnAhXWCmMBHR18CoQQFjALegQIAhAB">
+
+<div class="r-links rr r result1">
+ <img alt="https://www.techrepublic.com/"
+ height="16"
+ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVQ4jZ3TPUhWYRQH8N+9foWoaRkkmQX5jtEmRbQFGUZEW2RFEFRIBDpYYBY1ZkuDNDQYRVRbJEVFBC1aCYGDYNZiaB8WBir2KtzbcK/19vYO1h8eeM7X/5zznOcEmzZs9B+4htt4UVzAuB3N6f0hBvLsB3EcVyGfoAX9OXIXXqI7lS+hCb0YgSCvhRjvcRKrU8eavCR3cGBJCFGyxIaPaMTT1HEVDmMIj7EtNxiCTHXJ1riqbiAOwjHsTitYNsKxCxMN5RPjnUEcZdJs/4LNoQ9Dd4cvT9aUfxq/Lo6607ZIHrgdF3GkQHAHboXiqM/kyJnh9uf3g5mpaZxKHd7hCs6hTzKNZqzEefTgWDGOirJlKhpulM/Md8xVRmcFYQNqJTN/i9NoxaOcCnrxOi03bvV9qmz0xL3aYO5rBjtQIfltQzgkmcCT9OxB21KfEInm27L1W/aXLvwYzSYl5mMQu/KV4e9rfNNCdm/RYtQvjlcUICiIHAKRhdk3n5v2rQ/i2VfLJfhzF+ann31p6XmwrrNxIlv57Zd6sahEXFUnDsL8eIH23N2xUxAOqlo7q6iUOE601fUyXWtE1fV/EfwEqS2DuvotFF4AAAAASUVORK5CYII="
+ width="16">
+ <cite class="cite">
+   www.techrepublic.com › article › how-to-become-a-developer-a-chea...
+   <span  >
+     <img src="https://serfob.s3.amazonaws.com/media/dropdown-icon-pngc43-4cf9-8bae-b4f7793ed75b.png" alt="dropdown" height="18">
+   </span>
+</cite>
+</div>
+<h3 class="linkabout">How to become a developer: A cheat sheet - TechRepublic</h3>
+</a>
+
+<p>
+Apr 30, 2019 - If you are interested in pursuing a career in development and don't know where to start, here's your go-to guide for salaries, skills, and the best programming languages to learn. ... That said, software development is a dynamic field, in which new programming languages, frameworks ...
+</p>
+</div>
+<div style="clear:both"> 
+  
+  <a href="https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;
+url=https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/&amp;ved=2ahUKEwiA1ZOPxZnnAhXWCmMBHR18CoQQFjALegQIAhAB">
+
+<div class="r-links rr r result1">
+<img alt="https://www.techrepublic.com/"
+height="16"
+src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVQ4jZ3TPUhWYRQH8N+9foWoaRkkmQX5jtEmRbQFGUZEW2RFEFRIBDpYYBY1ZkuDNDQYRVRbJEVFBC1aCYGDYNZiaB8WBir2KtzbcK/19vYO1h8eeM7X/5zznOcEmzZs9B+4htt4UVzAuB3N6f0hBvLsB3EcVyGfoAX9OXIXXqI7lS+hCb0YgSCvhRjvcRKrU8eavCR3cGBJCFGyxIaPaMTT1HEVDmMIj7EtNxiCTHXJ1riqbiAOwjHsTitYNsKxCxMN5RPjnUEcZdJs/4LNoQ9Dd4cvT9aUfxq/Lo6607ZIHrgdF3GkQHAHboXiqM/kyJnh9uf3g5mpaZxKHd7hCs6hTzKNZqzEefTgWDGOirJlKhpulM/Md8xVRmcFYQNqJTN/i9NoxaOcCnrxOi03bvV9qmz0xL3aYO5rBjtQIfltQzgkmcCT9OxB21KfEInm27L1W/aXLvwYzSYl5mMQu/KV4e9rfNNCdm/RYtQvjlcUICiIHAKRhdk3n5v2rQ/i2VfLJfhzF+ann31p6XmwrrNxIlv57Zd6sahEXFUnDsL8eIH23N2xUxAOqlo7q6iUOE601fUyXWtE1fV/EfwEqS2DuvotFF4AAAAASUVORK5CYII="
+width="16">
+<cite class="cite">
+www.techrepublic.com › article › how-to-become-a-developer-a-chea...
+<span  >
+<img src="https://serfob.s3.amazonaws.com/media/dropdown-icon-pngc43-4cf9-8bae-b4f7793ed75b.png" alt="dropdown" height="18">
+</span>
+</cite>
+</div>
+<h3 class="linkabout">How to become a developer: A cheat sheet - TechRepublic</h3>
+</a>
+
+<p>
+Apr 30, 2019 - If you are interested in pursuing a career in development and don't know where to start, here's your go-to guide for salaries, skills, and the best programming languages to learn. ... That said, software development is a dynamic field, in which new programming languages, frameworks ...
+</p>
+</div>
+<div style="clear:both"> 
+  
+  <a href="https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;
+url=https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/&amp;ved=2ahUKEwiA1ZOPxZnnAhXWCmMBHR18CoQQFjALegQIAhAB">
+
+<div class="r-links rr r result1">
+<img alt="https://www.techrepublic.com/"
+height="16"
+src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVQ4jZ3TPUhWYRQH8N+9foWoaRkkmQX5jtEmRbQFGUZEW2RFEFRIBDpYYBY1ZkuDNDQYRVRbJEVFBC1aCYGDYNZiaB8WBir2KtzbcK/19vYO1h8eeM7X/5zznOcEmzZs9B+4htt4UVzAuB3N6f0hBvLsB3EcVyGfoAX9OXIXXqI7lS+hCb0YgSCvhRjvcRKrU8eavCR3cGBJCFGyxIaPaMTT1HEVDmMIj7EtNxiCTHXJ1riqbiAOwjHsTitYNsKxCxMN5RPjnUEcZdJs/4LNoQ9Dd4cvT9aUfxq/Lo6607ZIHrgdF3GkQHAHboXiqM/kyJnh9uf3g5mpaZxKHd7hCs6hTzKNZqzEefTgWDGOirJlKhpulM/Md8xVRmcFYQNqJTN/i9NoxaOcCnrxOi03bvV9qmz0xL3aYO5rBjtQIfltQzgkmcCT9OxB21KfEInm27L1W/aXLvwYzSYl5mMQu/KV4e9rfNNCdm/RYtQvjlcUICiIHAKRhdk3n5v2rQ/i2VfLJfhzF+ann31p6XmwrrNxIlv57Zd6sahEXFUnDsL8eIH23N2xUxAOqlo7q6iUOE601fUyXWtE1fV/EfwEqS2DuvotFF4AAAAASUVORK5CYII="
+width="16">
+<cite class="cite">
+www.techrepublic.com › article › how-to-become-a-developer-a-chea...
+<span  >
+<img src="https://serfob.s3.amazonaws.com/media/dropdown-icon-pngc43-4cf9-8bae-b4f7793ed75b.png" alt="dropdown" height="18">
+</span>
+</cite>
+</div>
+<h3 class="linkabout">How to become a developer: A cheat sheet - TechRepublic</h3>
+</a>
+
+<p>
+Apr 30, 2019 - If you are interested in pursuing a career in development and don't know where to start, here's your go-to guide for salaries, skills, and the best programming languages to learn. ... That said, software development is a dynamic field, in which new programming languages, frameworks ...
+</p>
+</div>
+<div style="clear:both"> 
+  
+  <a href="https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;
+url=https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/&amp;ved=2ahUKEwiA1ZOPxZnnAhXWCmMBHR18CoQQFjALegQIAhAB">
+
+<div class="r-links rr r result1">
+<img alt="https://www.techrepublic.com/"
+height="16"
+src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVQ4jZ3TPUhWYRQH8N+9foWoaRkkmQX5jtEmRbQFGUZEW2RFEFRIBDpYYBY1ZkuDNDQYRVRbJEVFBC1aCYGDYNZiaB8WBir2KtzbcK/19vYO1h8eeM7X/5zznOcEmzZs9B+4htt4UVzAuB3N6f0hBvLsB3EcVyGfoAX9OXIXXqI7lS+hCb0YgSCvhRjvcRKrU8eavCR3cGBJCFGyxIaPaMTT1HEVDmMIj7EtNxiCTHXJ1riqbiAOwjHsTitYNsKxCxMN5RPjnUEcZdJs/4LNoQ9Dd4cvT9aUfxq/Lo6607ZIHrgdF3GkQHAHboXiqM/kyJnh9uf3g5mpaZxKHd7hCs6hTzKNZqzEefTgWDGOirJlKhpulM/Md8xVRmcFYQNqJTN/i9NoxaOcCnrxOi03bvV9qmz0xL3aYO5rBjtQIfltQzgkmcCT9OxB21KfEInm27L1W/aXLvwYzSYl5mMQu/KV4e9rfNNCdm/RYtQvjlcUICiIHAKRhdk3n5v2rQ/i2VfLJfhzF+ann31p6XmwrrNxIlv57Zd6sahEXFUnDsL8eIH23N2xUxAOqlo7q6iUOE601fUyXWtE1fV/EfwEqS2DuvotFF4AAAAASUVORK5CYII="
+width="16">
+<cite class="cite">
+www.techrepublic.com › article › how-to-become-a-developer-a-chea...
+<span  >
+<img src="https://serfob.s3.amazonaws.com/media/dropdown-icon-pngc43-4cf9-8bae-b4f7793ed75b.png" alt="dropdown" height="18">
+</span>
+</cite>
+</div>
+<h3 class="linkabout">How to become a developer: A cheat sheet - TechRepublic</h3>
+</a>
+
+<p>
+Apr 30, 2019 - If you are interested in pursuing a career in development and don't know where to start, here's your go-to guide for salaries, skills, and the best programming languages to learn. ... That said, software development is a dynamic field, in which new programming languages, frameworks ...
+</p>
+</div>
+<div style="clear:both"> 
+  
+  <a href="https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;
+url=https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/&amp;ved=2ahUKEwiA1ZOPxZnnAhXWCmMBHR18CoQQFjALegQIAhAB">
+
+<div class="r-links rr r result1">
+<img alt="https://www.techrepublic.com/"
+height="16"
+src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVQ4jZ3TPUhWYRQH8N+9foWoaRkkmQX5jtEmRbQFGUZEW2RFEFRIBDpYYBY1ZkuDNDQYRVRbJEVFBC1aCYGDYNZiaB8WBir2KtzbcK/19vYO1h8eeM7X/5zznOcEmzZs9B+4htt4UVzAuB3N6f0hBvLsB3EcVyGfoAX9OXIXXqI7lS+hCb0YgSCvhRjvcRKrU8eavCR3cGBJCFGyxIaPaMTT1HEVDmMIj7EtNxiCTHXJ1riqbiAOwjHsTitYNsKxCxMN5RPjnUEcZdJs/4LNoQ9Dd4cvT9aUfxq/Lo6607ZIHrgdF3GkQHAHboXiqM/kyJnh9uf3g5mpaZxKHd7hCs6hTzKNZqzEefTgWDGOirJlKhpulM/Md8xVRmcFYQNqJTN/i9NoxaOcCnrxOi03bvV9qmz0xL3aYO5rBjtQIfltQzgkmcCT9OxB21KfEInm27L1W/aXLvwYzSYl5mMQu/KV4e9rfNNCdm/RYtQvjlcUICiIHAKRhdk3n5v2rQ/i2VfLJfhzF+ann31p6XmwrrNxIlv57Zd6sahEXFUnDsL8eIH23N2xUxAOqlo7q6iUOE601fUyXWtE1fV/EfwEqS2DuvotFF4AAAAASUVORK5CYII="
+width="16">
+<cite class="cite">
+www.techrepublic.com › article › how-to-become-a-developer-a-chea...
+<span  >
+<img src="https://serfob.s3.amazonaws.com/media/dropdown-icon-pngc43-4cf9-8bae-b4f7793ed75b.png" alt="dropdown" height="18">
+</span>
+</cite>
+</div>
+<h3 class="linkabout">How to become a developer: A cheat sheet - TechRepublic</h3>
+</a>
+
+<p>
+Apr 30, 2019 - If you are interested in pursuing a career in development and don't know where to start, here's your go-to guide for salaries, skills, and the best programming languages to learn. ... That said, software development is a dynamic field, in which new programming languages, frameworks ...
+</p>
+</div>
+<div style="clear:both"> 
+  
+  <a href="https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;
+url=https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/&amp;ved=2ahUKEwiA1ZOPxZnnAhXWCmMBHR18CoQQFjALegQIAhAB">
+
+<div class="r-links rr r result1">
+<img alt="https://www.techrepublic.com/"
+height="16"
+src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVQ4jZ3TPUhWYRQH8N+9foWoaRkkmQX5jtEmRbQFGUZEW2RFEFRIBDpYYBY1ZkuDNDQYRVRbJEVFBC1aCYGDYNZiaB8WBir2KtzbcK/19vYO1h8eeM7X/5zznOcEmzZs9B+4htt4UVzAuB3N6f0hBvLsB3EcVyGfoAX9OXIXXqI7lS+hCb0YgSCvhRjvcRKrU8eavCR3cGBJCFGyxIaPaMTT1HEVDmMIj7EtNxiCTHXJ1riqbiAOwjHsTitYNsKxCxMN5RPjnUEcZdJs/4LNoQ9Dd4cvT9aUfxq/Lo6607ZIHrgdF3GkQHAHboXiqM/kyJnh9uf3g5mpaZxKHd7hCs6hTzKNZqzEefTgWDGOirJlKhpulM/Md8xVRmcFYQNqJTN/i9NoxaOcCnrxOi03bvV9qmz0xL3aYO5rBjtQIfltQzgkmcCT9OxB21KfEInm27L1W/aXLvwYzSYl5mMQu/KV4e9rfNNCdm/RYtQvjlcUICiIHAKRhdk3n5v2rQ/i2VfLJfhzF+ann31p6XmwrrNxIlv57Zd6sahEXFUnDsL8eIH23N2xUxAOqlo7q6iUOE601fUyXWtE1fV/EfwEqS2DuvotFF4AAAAASUVORK5CYII="
+width="16">
+<cite class="cite">
+www.techrepublic.com › article › how-to-become-a-developer-a-chea...
+<span  >
+<img src="https://serfob.s3.amazonaws.com/media/dropdown-icon-pngc43-4cf9-8bae-b4f7793ed75b.png" alt="dropdown" height="18">
+</span>
+</cite>
+</div>
+<h3 class="linkabout">How to become a developer: A cheat sheet - TechRepublic</h3>
+</a>
+
+<p>
+Apr 30, 2019 - If you are interested in pursuing a career in development and don't know where to start, here's your go-to guide for salaries, skills, and the best programming languages to learn. ... That said, software development is a dynamic field, in which new programming languages, frameworks ...
+</p>
+</div>
+<div style="clear:both"> 
+  
+  <a href="https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;
+url=https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/&amp;ved=2ahUKEwiA1ZOPxZnnAhXWCmMBHR18CoQQFjALegQIAhAB">
+
+<div class="r-links rr r result1">
+<img alt="https://www.techrepublic.com/"
+height="16"
+src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVQ4jZ3TPUhWYRQH8N+9foWoaRkkmQX5jtEmRbQFGUZEW2RFEFRIBDpYYBY1ZkuDNDQYRVRbJEVFBC1aCYGDYNZiaB8WBir2KtzbcK/19vYO1h8eeM7X/5zznOcEmzZs9B+4htt4UVzAuB3N6f0hBvLsB3EcVyGfoAX9OXIXXqI7lS+hCb0YgSCvhRjvcRKrU8eavCR3cGBJCFGyxIaPaMTT1HEVDmMIj7EtNxiCTHXJ1riqbiAOwjHsTitYNsKxCxMN5RPjnUEcZdJs/4LNoQ9Dd4cvT9aUfxq/Lo6607ZIHrgdF3GkQHAHboXiqM/kyJnh9uf3g5mpaZxKHd7hCs6hTzKNZqzEefTgWDGOirJlKhpulM/Md8xVRmcFYQNqJTN/i9NoxaOcCnrxOi03bvV9qmz0xL3aYO5rBjtQIfltQzgkmcCT9OxB21KfEInm27L1W/aXLvwYzSYl5mMQu/KV4e9rfNNCdm/RYtQvjlcUICiIHAKRhdk3n5v2rQ/i2VfLJfhzF+ann31p6XmwrrNxIlv57Zd6sahEXFUnDsL8eIH23N2xUxAOqlo7q6iUOE601fUyXWtE1fV/EfwEqS2DuvotFF4AAAAASUVORK5CYII="
+width="16">
+<cite class="cite">
+www.techrepublic.com › article › how-to-become-a-developer-a-chea...
+<span  >
+<img src="https://serfob.s3.amazonaws.com/media/dropdown-icon-pngc43-4cf9-8bae-b4f7793ed75b.png" alt="dropdown" height="18">
+</span>
+</cite>
+</div>
+<h3 class="linkabout">How to become a developer: A cheat sheet - TechRepublic</h3>
+</a>
+
+<p>
+Apr 30, 2019 - If you are interested in pursuing a career in development and don't know where to start, here's your go-to guide for salaries, skills, and the best programming languages to learn. ... That said, software development is a dynamic field, in which new programming languages, frameworks ...
+</p>
+</div>
+<div style="clear:both"> 
+  
+  <a href="https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;
+url=https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/&amp;ved=2ahUKEwiA1ZOPxZnnAhXWCmMBHR18CoQQFjALegQIAhAB">
+
+<div class="r-links rr r result1">
+<img alt="https://www.techrepublic.com/"
+height="16"
+src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVQ4jZ3TPUhWYRQH8N+9foWoaRkkmQX5jtEmRbQFGUZEW2RFEFRIBDpYYBY1ZkuDNDQYRVRbJEVFBC1aCYGDYNZiaB8WBir2KtzbcK/19vYO1h8eeM7X/5zznOcEmzZs9B+4htt4UVzAuB3N6f0hBvLsB3EcVyGfoAX9OXIXXqI7lS+hCb0YgSCvhRjvcRKrU8eavCR3cGBJCFGyxIaPaMTT1HEVDmMIj7EtNxiCTHXJ1riqbiAOwjHsTitYNsKxCxMN5RPjnUEcZdJs/4LNoQ9Dd4cvT9aUfxq/Lo6607ZIHrgdF3GkQHAHboXiqM/kyJnh9uf3g5mpaZxKHd7hCs6hTzKNZqzEefTgWDGOirJlKhpulM/Md8xVRmcFYQNqJTN/i9NoxaOcCnrxOi03bvV9qmz0xL3aYO5rBjtQIfltQzgkmcCT9OxB21KfEInm27L1W/aXLvwYzSYl5mMQu/KV4e9rfNNCdm/RYtQvjlcUICiIHAKRhdk3n5v2rQ/i2VfLJfhzF+ann31p6XmwrrNxIlv57Zd6sahEXFUnDsL8eIH23N2xUxAOqlo7q6iUOE601fUyXWtE1fV/EfwEqS2DuvotFF4AAAAASUVORK5CYII="
+width="16">
+<cite class="cite">
+www.techrepublic.com › article › how-to-become-a-developer-a-chea...
+<span  >
+<img src="https://serfob.s3.amazonaws.com/media/dropdown-icon-pngc43-4cf9-8bae-b4f7793ed75b.png" alt="dropdown" height="18">
+</span>
+</cite>
+</div>
+<h3 class="linkabout">How to become a developer: A cheat sheet - TechRepublic</h3>
+</a>
+
+<p>
+Apr 30, 2019 - If you are interested in pursuing a career in development and don't know where to start, here's your go-to guide for salaries, skills, and the best programming languages to learn. ... That said, software development is a dynamic field, in which new programming languages, frameworks ...
+</p>
+</div>
+<div style="clear:both"> 
+  
+  <a href="https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;
+url=https://www.techrepublic.com/article/how-to-become-a-developer-a-cheat-sheet/&amp;ved=2ahUKEwiA1ZOPxZnnAhXWCmMBHR18CoQQFjALegQIAhAB">
+
+<div class="r-links rr r result1">
+<img alt="https://www.techrepublic.com/"
+height="16"
+src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVQ4jZ3TPUhWYRQH8N+9foWoaRkkmQX5jtEmRbQFGUZEW2RFEFRIBDpYYBY1ZkuDNDQYRVRbJEVFBC1aCYGDYNZiaB8WBir2KtzbcK/19vYO1h8eeM7X/5zznOcEmzZs9B+4htt4UVzAuB3N6f0hBvLsB3EcVyGfoAX9OXIXXqI7lS+hCb0YgSCvhRjvcRKrU8eavCR3cGBJCFGyxIaPaMTT1HEVDmMIj7EtNxiCTHXJ1riqbiAOwjHsTitYNsKxCxMN5RPjnUEcZdJs/4LNoQ9Dd4cvT9aUfxq/Lo6607ZIHrgdF3GkQHAHboXiqM/kyJnh9uf3g5mpaZxKHd7hCs6hTzKNZqzEefTgWDGOirJlKhpulM/Md8xVRmcFYQNqJTN/i9NoxaOcCnrxOi03bvV9qmz0xL3aYO5rBjtQIfltQzgkmcCT9OxB21KfEInm27L1W/aXLvwYzSYl5mMQu/KV4e9rfNNCdm/RYtQvjlcUICiIHAKRhdk3n5v2rQ/i2VfLJfhzF+ann31p6XmwrrNxIlv57Zd6sahEXFUnDsL8eIH23N2xUxAOqlo7q6iUOE601fUyXWtE1fV/EfwEqS2DuvotFF4AAAAASUVORK5CYII="
+width="16">
+<cite class="cite">
+www.techrepublic.com › article › how-to-become-a-developer-a-chea...
+<span  >
+<img src="https://serfob.s3.amazonaws.com/media/dropdown-icon-pngc43-4cf9-8bae-b4f7793ed75b.png" alt="dropdown" height="18">
+</span>
+</cite>
+</div>
+<h3 class="linkabout">How to become a developer: A cheat sheet - TechRepublic</h3>
+</a>
+
+<p>
+Apr 30, 2019 - If you are interested in pursuing a career in development and don't know where to start, here's your go-to guide for salaries, skills, and the best programming languages to learn. ... That said, software development is a dynamic field, in which new programming languages, frameworks ...
+</p>
+</div>
+                          </div>
+ 
+     </section> <br> 
+
+<!--  lower section -->
+     <hr style="margin-top: 127%">
+
+    <aside>
+      <div  class="related">
+        <h3>Searches Related to this Search</h3>
+        <div class="rel-links">
+          <p><a href="#"><strong>how to</strong>become a <strong>developer</strong></a></p>
+          <p><a href="#"><strong>how to</strong>become a <strong>software engineer</strong></a></p>
+          <p><a href="#"><strong>how to</strong>become a <strong>web developer</strong></a></p>
+          <p><a href="#"><strong>how to</strong>become a <strong>web engineer</strong></a></p>
+          <p><a href="#"><strong>how to</strong>become a <strong>front end developer</strong></a></p>
+          <p><a href="#"><strong>how to</strong>become a <strong>front end engineer</strong></a></p>
+          <p><a href="#"><strong>how to</strong>become a <strong>software specialist</strong></a></p>
+          <p><a href="#"><strong>how to</strong>become a <strong>java developer</strong></a></p>
+        </div>
+
+      <div class="related-sub">
+        <img src="Google-o.png" alt="logos" width="220px">
+        <span>
+          <a href="#">
+            <img src="" alt="">
+          </a>
+        </span>
+      </div>
+      <div class="related-links">
+        <table>
+         <tbody>
+           <tr>
+             <td>
+               1
+             </td>
+             <td>
+              <a href="#">2</a>
+            </td>
+            <td>
+              <a href="#">3</a>
+            </td>
+            <td>
+              <a href="#">4</a>
+            </td>
+            <td>
+              <a href="#">5</a>
+            </td>
+            <td>
+              <a href="#">6</a>
+            </td>
+            <td>
+              <a href="#">7</a>
+            </td>
+            <td>
+              <a href="#">8</a>
+            </td>
+            <td>
+              <a href="#">9</a>
+            </td>
+            <td>
+              <a href="#">10</a>
+            </td>
+           </tr>
+         </tbody>
+        </table>
+      </div>
+      </div>
+    </aside>
+    <footer>
+  
+    <div class="footer-container">
+      <div class="footer-box">
+      <div class="footer-main">
+        <span class="main">
+          Nigeria
+        </span>
+        <span class="tag">
+        </span>
+        <span style="font-weight:bold;color:black">
+          Anthony Village, Lagos
+        </span>
+        <span>-</span>
+        <span>Based on your past activities</span>
+        <span>-</span>
+        <span>
+          <a href="#" style="color: black">Use precise location</a>
+        </span>
+        <span>-</span>
+        <span>Learn more</span>
+      </div>
+    </div>
+    <div class="footer-sub">
+        <span class="sub">
+          <span style="margin-right:20px">
+            <a href="#">Help</a>
+            </span> 
+          <span  style="margin-right:20px"> 
+            <a href="#">Send feedback</a>
+            </span>
+          <span style="margin-right:20px">
+            <a href="#">Privacy</a>
+            </span style="margin-right:20px"> 
+          <span style="margin-right:20px">
+            <a href="#">Terms</a>
+            </span> 
+        </span>
+    </div>
+  </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
